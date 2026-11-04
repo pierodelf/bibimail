@@ -1,6 +1,7 @@
 package net.thunderbird.android.dev
 
 import app.k9mail.autodiscovery.api.AutoDiscovery
+import net.thunderbird.android.autodiscovery.BibimailAutoDiscovery
 import net.thunderbird.backend.api.BackendFactory
 import org.koin.core.module.Module
 import org.koin.core.qualifier.named
@@ -10,6 +11,6 @@ fun Module.developmentModuleAdditions() {
         emptyMap()
     }
     single<List<AutoDiscovery>>(named("extraAutoDiscoveries")) {
-        emptyList()
+        listOf(BibimailAutoDiscovery())
     }
 }

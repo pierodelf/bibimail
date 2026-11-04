@@ -52,9 +52,9 @@ val featureAccountSetupModule: Module = module {
     single<AutoDiscoveryRegistry> {
         val extraAutoDiscoveries = get<List<AutoDiscovery>>(named("extraAutoDiscoveries"))
         RealAutoDiscoveryRegistry(
-            autoDiscoveries = RealAutoDiscoveryRegistry.createDefaultAutoDiscoveries(
+            autoDiscoveries = extraAutoDiscoveries + RealAutoDiscoveryRegistry.createDefaultAutoDiscoveries(
                 okHttpClient = get(),
-            ) + extraAutoDiscoveries,
+            ),
         )
     }
 

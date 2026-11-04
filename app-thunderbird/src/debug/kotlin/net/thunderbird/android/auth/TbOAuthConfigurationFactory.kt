@@ -76,7 +76,7 @@ class TbOAuthConfigurationFactory : OAuthConfigurationFactory {
             ),
             authorizationEndpoint = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
             tokenEndpoint = "https://login.microsoftonline.com/common/oauth2/v2.0/token",
-            redirectUri = "msauth://net.thunderbird.android.debug/eaXDuh6T3KFWjcJhsoaObT9OayU%3D",
+            redirectUri = "msauth://${BuildConfig.APPLICATION_ID}/eaXDuh6T3KFWjcJhsoaObT9OayU%3D",
         )
     }
 

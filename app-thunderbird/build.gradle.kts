@@ -14,13 +14,13 @@ android {
     namespace = "net.thunderbird.android"
 
     defaultConfig {
-        applicationId = "net.thunderbird.android"
-        testApplicationId = "net.thunderbird.android.tests"
+        applicationId = "it.bibimail.android"
+        testApplicationId = "it.bibimail.android.tests"
 
         versionCode = 4
         versionName = "27.0"
 
-        buildConfigField("String", "CLIENT_INFO_APP_NAME", "\"Thunderbird for Android\"")
+        buildConfigField("String", "CLIENT_INFO_APP_NAME", "\"Bibimail for Android\"")
     }
 
     androidResources {

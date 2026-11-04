@@ -2,6 +2,7 @@ package net.thunderbird.android.dev
 
 import app.k9mail.autodiscovery.api.AutoDiscovery
 import app.k9mail.autodiscovery.demo.DemoAutoDiscovery
+import net.thunderbird.android.autodiscovery.BibimailAutoDiscovery
 import net.thunderbird.backend.api.BackendFactory
 import net.thunderbird.core.featureflag.inject.qualifier.InjectQualifier
 import net.thunderbird.core.featureflag.provider.CatalogFeatureFlagProvider
@@ -19,7 +20,7 @@ fun Module.developmentModuleAdditions() {
         mapOf("demo" to get<DemoBackendFactory>())
     }
     single<List<AutoDiscovery>>(named("extraAutoDiscoveries")) {
-        listOf(DemoAutoDiscovery())
+        listOf(BibimailAutoDiscovery(), DemoAutoDiscovery())
     }
     single {
         RuntimeDebugOverrideFeatureFlagProvider(
