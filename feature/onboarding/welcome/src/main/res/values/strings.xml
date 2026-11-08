@@ -3,6 +3,6 @@
     <string name="onboarding_welcome_text">An open source, privacy-focused and ad-free email app for Android.</string>
     <string name="onboarding_welcome_start_button">Get started</string>
     <string name="onboarding_welcome_import_button">Import K-9 settings</string>
-    <!-- Small note at the bottom of the welcome screen. "Thunderbird Technologies Corporation" and "Mozilla" are company/brand names that shouldn't be translated. -->
-    <string name="onboarding_welcome_developed_by">Developed by a dedicated team at Thunderbird Technologies Corporation and a global community of volunteers. Proudly part of the Mozilla family.</string>
+    <!-- Company details of the service provider (Fabersoft). Not translatable. -->
+    <string name="onboarding_welcome_developed_by" translatable="false">FABERSOFT di Burattini Gabriele &amp; C. S.n.c.\nPiazzale Matteotti, 21 – 60044 Fabriano (AN)\nP.IVA 02082390424\nTel. 0732 070205 – info@fabersoft.it\nwww.fabersoft.it</string>
 </resources>

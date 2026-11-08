@@ -232,6 +232,7 @@ private fun WelcomeFooter(
 
         TextBodySmall(
             text = stringResource(R.string.onboarding_welcome_developed_by),
+            textAlign = TextAlign.Center,
             modifier = Modifier
                 .padding(top = BoltTheme.spacings.quadruple)
                 .padding(horizontal = BoltTheme.spacings.double),
