@@ -5,13 +5,13 @@
     <foreground>
         <inset
             android:drawable="@drawable/ic_app_logo"
-            android:inset="22%"
+            android:inset="16%"
             />
     </foreground>
     <monochrome>
         <inset
             android:drawable="@drawable/ic_app_logo_monochrome"
-            android:inset="22%"
+            android:inset="16%"
             />
     </monochrome>
 </adaptive-icon>
